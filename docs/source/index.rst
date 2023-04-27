@@ -207,7 +207,7 @@ Campaign
 
       <small style="font-size: 14px;">200</small>
 
-   .. code-block:: json
+   .. code-block:: python
 
       {
          "status_code": int,
