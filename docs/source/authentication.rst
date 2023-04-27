@@ -2,7 +2,7 @@
 .. _authentication
 
 Authentication
------------------
+================
 
 Each request to the API must have a cookie specified below.
 

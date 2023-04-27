@@ -1,11 +1,10 @@
-Botstream Campaign Management
-===================================
 
 .. _index
 **Campaign**
-----------------
+===============
 
 1. Create Campaign
+----------------------
 
    **Request**
 
@@ -49,6 +48,7 @@ Botstream Campaign Management
 
 
 2. Update Campaign
+--------------------
 
    **Request**
 
@@ -92,6 +92,7 @@ Botstream Campaign Management
 
 
 3. Delete Campaign
+------------------------
 
    **Request**
 
@@ -122,6 +123,7 @@ Botstream Campaign Management
 
 
 4. Get all campaigns
+------------------------
 
    **Request**
 
@@ -162,6 +164,7 @@ Botstream Campaign Management
               }
 
 5. Get Campaign
+--------------------
 
    **Request**
 
