@@ -41,7 +41,7 @@ Campaign
 
    .. raw:: html
 
-      <small style="font-size: 16px;">200</small>
+      <small style="font-size: 14px;">200</small>
 
    .. code-block:: python
 
@@ -89,7 +89,7 @@ Campaign
 
    .. raw:: html
 
-      <small style="font-size: 16px;">200</small>
+      <small style="font-size: 14px;">200</small>
 
    .. code-block:: python
 
@@ -123,9 +123,9 @@ Campaign
 
    **Response**
 
-    .. raw:: html
+   .. raw:: html
 
-      <small style="font-size: 16px;">200</small>
+      <small style="font-size: 14px;">200</small>
 
    .. code-block:: python
 
@@ -150,9 +150,9 @@ Campaign
 
    **Response**
 
-    .. raw:: html
+   .. raw:: html
 
-      <small style="font-size: 16px;">200</small>
+      <small style="font-size: 14px;">200</small>
 
    .. code-block:: json
 
@@ -203,9 +203,9 @@ Campaign
 
    **Response**
 
-    .. raw:: html
+   .. raw:: html
 
-      <small style="font-size: 16px;">200</small>
+      <small style="font-size: 14px;">200</small>
 
    .. code-block:: json
 
