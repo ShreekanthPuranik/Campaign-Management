@@ -192,7 +192,6 @@ Campaign
 
      * - **Status**
        - **Response**
-       - Data format
      * - 200
        - {
             "status_code": int,
