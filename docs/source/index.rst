@@ -1,5 +1,5 @@
-
 .. _index
+
 Campaign
 ===============
 
@@ -87,12 +87,17 @@ Campaign
 
    **Response**
 
-   .. list-table:: 
+   .. raw:: html
 
-     * - **Status**
-       - **Response**
-     * - 200
-       - {"status_code": int, "status": string}
+      <small style="font-size: 16px;">200</small>
+
+   .. code-block:: python
+
+    {
+         "status_code": int,
+         "status": string
+    }      
+ 
 
 
 3. Delete Campaign
@@ -112,18 +117,23 @@ Campaign
 
    .. code-block:: 
 
-      ""data" : {
+      "data" : {
             "name" : string
        }
 
    **Response**
 
-   .. list-table:: 
+    .. raw:: html
 
-     * - **Status**
-       - **Response**
-     * - 200
-       - {"status_code": int, "status": string}
+      <small style="font-size: 16px;">200</small>
+
+   .. code-block:: python
+
+    {
+         "status_code": int, 
+         "status": string
+    }
+
 
 
 4. Get all campaigns
@@ -140,32 +150,34 @@ Campaign
 
    **Response**
 
-   .. list-table:: 
+    .. raw:: html
 
-     * - **Status**
-       - **Response**
-     * - 200
-       - {
-                  "status_code": "int",
-                  "data": [
-                      {
-                          "name": "string",
-                          "clusters": [
+      <small style="font-size: 16px;">200</small>
+
+   .. code-block:: json
+
+       {
+         "status_code": "int",
+         "data": [
+               {
+                  "name": "string",
+                  "clusters": [
+                     {
+                           "cluster_name": "string",
+                           "capacity": "int",
+                           "weightage": "int",
+                           "gateways": [
                               {
-                                  "cluster_name": "string",
-                                  "capacity": "int",
-                                  "weightage": "int",
-                                  "gateways": [
-                                      {
-                                          "name": "string",
-                                          "did_range": "string"
-                                      }
-                                  ]
+                                 "name": "string",
+                                 "did_range": "string"
                               }
-                          ]
-                      }
+                           ]
+                     }
                   ]
-              }
+               }
+         ]
+       }     
+
 
 5. Get Campaign
 --------------------
@@ -189,33 +201,33 @@ Campaign
      * - id
        - string
 
-
    **Response**
-   
-   .. list-table:: 
 
-     * - **Status**
-       - **Response**
-     * - 200
-       - {
-            "status_code": int,
-            "data": {
-                "name": "string",
-                "clusters": [
-                    {
-                        "cluster_name": "string",
-                        "capacity": "int",
-                        "weightage": "int",
-                        "gateways": [
-                            {
-                                "name": "string",
-                                "did_range": "string"
-                            }
-                        ]
-                    }
-                ]
-            }
+    .. raw:: html
+
+      <small style="font-size: 16px;">200</small>
+
+   .. code-block:: json
+
+      {
+         "status_code": int,
+         "data": {
+            "name": string,
+            "clusters": [
+               {
+                  "cluster_name": string,
+                     "capacity": int,
+                     "weightage": int,
+                  "gateways": [
+                     {
+                        "name": string,
+                        "did_range": string
+                     }
+                  ]
+               }
+            ] 
          }
+      }
 
 
 .. autosummary:: 
