@@ -1,6 +1,7 @@
 Botstream Campaign Management
 ===================================
 
+.. _index
 **Campaign**
 ----------------
 
@@ -220,5 +221,6 @@ Botstream Campaign Management
 .. toctree:: generated
    :numbered:
 
+   index
    gateways
    authentication
