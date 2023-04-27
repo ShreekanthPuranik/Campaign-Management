@@ -1,9 +1,11 @@
 Botstream Campaign Management
 ===================================
 
-Campaign
----------
+**Campaign**
+----------------
+
 1. Create Campaign
+^^^^^^^^^^^^^^^^^^^^^^
 
    **Request**
 
@@ -13,6 +15,7 @@ Campaign
        - **URL**
      * - Post   	
        - /api/campaign	
+
 
    **Body**
 
@@ -39,13 +42,14 @@ Campaign
 
    .. list-table:: 
 
-      * - **Status**
-         - **Response**
-      * - 200   	
-         - {"status_code": int, "status": string}
+     * - **Status**
+       - **Response**
+     * - 200   	
+       - {"status_code": int, "status": string}
 
 
 2. Update Campaign
+^^^^^^^^^^^^^^^^^^^^^^^
 
    **Request**
 
@@ -89,6 +93,7 @@ Campaign
 
 
 3. Delete Campaign
+^^^^^^^^^^^^^^^^^^^^^^^
 
    **Request**
 
@@ -105,8 +110,8 @@ Campaign
    .. code-block:: 
 
       ""data" : {
-                  "name" : string
-            }
+            "name" : string
+       }
 
    **Response**
 
@@ -119,6 +124,7 @@ Campaign
 
 
 4. Get all campaigns
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
    **Request**
 
@@ -159,6 +165,7 @@ Campaign
               }
 
 5. Get Campaign
+^^^^^^^^^^^^^^^^^^^^
 
    **Request**
 
@@ -209,10 +216,9 @@ Campaign
          }
 
 
-
 .. autosummary:: 
-.. toctree::
+.. toctree:: generated
    :numbered:
 
-   usage
-   api
+   gateways
+   authentication
