@@ -39,7 +39,9 @@ Campaign
 
    **Response**
 
-   200
+   .. raw:: html
+
+      <small style="font-size: 10px;">200</small>
 
    .. code-block:: json
 
