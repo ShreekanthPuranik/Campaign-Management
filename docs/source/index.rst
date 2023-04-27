@@ -39,13 +39,13 @@ Campaign
 
    **Response**
 
-      **200**
+   200
 
    .. code-block:: json
 
     {
              "status_code": int, 
-            "status": string
+             "status": string
     }
 
 
