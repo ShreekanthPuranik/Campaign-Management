@@ -1,6 +1,6 @@
 
 .. _index
-**Campaign**
+Campaign
 ===============
 
 1. Create Campaign
@@ -219,6 +219,5 @@
 .. toctree:: generated
    :numbered:
 
-   index
    gateways
    authentication
