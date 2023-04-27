@@ -3,8 +3,8 @@
 Gateways
 ============
 
-Get All Gateways From All clusters
------------------------------------------
+1. **Get All Gateways From All clusters**
+
 
 
    **Request**
