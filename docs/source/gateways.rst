@@ -4,7 +4,6 @@ Gateways
 ------------
 
 1. Get All Gateways From All clusters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
    **Request**
 
