@@ -41,9 +41,9 @@ Campaign
 
    .. raw:: html
 
-      <small style="font-size: 30px;">200</small>
+      <small style="font-size: 16px;">200</small>
 
-   .. code-block:: json
+   .. code-block:: python
 
     {
              "status_code": int, 
