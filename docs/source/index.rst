@@ -41,7 +41,7 @@ Campaign
 
    .. raw:: html
 
-      <small style="font-size: 10px;">200</small>
+      <small style="font-size: 30px;">200</small>
 
    .. code-block:: json
 
