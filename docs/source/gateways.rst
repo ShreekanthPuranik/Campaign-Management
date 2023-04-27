@@ -3,9 +3,7 @@
 Gateways
 ============
 
-1. **Get All Gateways From All clusters**
-
-
+**Get All Gateways From All clusters**
 
    **Request**
 
@@ -19,12 +17,13 @@ Gateways
 
    **Response**
 
-   .. list-table:: 
+   .. raw:: html
 
-     * - **Status**
-       - **Response**
-     * - 200
-       - {
+      <small style="font-size: 14px;"><strong>200</strong></small>
+
+   .. code-block:: python
+
+       {
             "status_code": int,
             "data": [
                {
@@ -37,5 +36,5 @@ Gateways
                      ]
                }
             ]
-         }
+       }
 
