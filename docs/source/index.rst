@@ -219,5 +219,6 @@ Campaign
 .. toctree:: generated
    :numbered:
 
+   index
    gateways
    authentication
