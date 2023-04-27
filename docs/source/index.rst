@@ -39,13 +39,13 @@ Campaign
 
    **Response**
 
-   .. list-table:: 
+   .. code-block:: json
+     { 
 
-     * - **Status**
-       - **Response**
-     * - 200   	
-       - {"status_code": int, "status": string}
-
+         {"Status" : "200"}
+      
+         {"status_code": int, "status": string}
+      }
 
 2. Update Campaign
 --------------------
