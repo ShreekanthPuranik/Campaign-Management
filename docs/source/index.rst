@@ -43,10 +43,10 @@ Campaign
 
    .. code-block:: json
 
-         {
-            "status_code": int, 
+    {
+             "status_code": int, 
             "status": string
-         }
+    }
 
 
 2. Update Campaign
