@@ -24,7 +24,7 @@ Gateways
      * - **Status**
        - **Response**
      * - 200
-       - ``{
+       - {
             "status_code": int,
             "data": [
                {
@@ -37,5 +37,5 @@ Gateways
                      ]
                }
             ]
-         }``
+         }
 
