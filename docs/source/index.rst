@@ -1,22 +1,218 @@
-Welcome to Lumache's documentation!
+Botstream Campaign Management
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+Campaign
+---------
+1. Create Campaign
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+   **Request**
 
-.. note::
+   .. list-table:: 
 
-   This project is under active development.
+     * - **Method**
+       - **URL**
+     * - Post   	
+       - /api/campaign	
 
-Contents
---------
+   **Body**
 
+   .. code-block:: json
+
+    {
+        "name": "string",
+        "clusters": [
+            {
+                "cluster_name": "string",
+                "capacity": "int",
+                "weightage": "int",
+                "gateways": [
+                    {
+                        "name": "string",
+                        "did_range": "string"
+                    }
+                ]
+            }
+        ]
+    }
+
+   **Response**
+
+   .. list-table:: 
+
+      * - **Status**
+         - **Response**
+      * - 200   	
+         - {"status_code": int, "status": string}
+
+
+2. Update Campaign
+
+   **Request**
+
+   .. list-table:: 
+
+     * - **Method**
+       - **URL**
+     * - PUT
+       - /api/campaign 
+
+   **Body**
+
+   .. code-block:: json
+
+    {
+        "name": "string",
+        "clusters": [
+            {
+                "cluster_name": "string",
+                "capacity": "int",
+                "weightage": "int",
+                "gateways": [
+                    {
+                        "name": "string",
+                        "did_range": "string"
+                    }
+                ]
+            }
+        ]
+    }
+
+
+   **Response**
+
+   .. list-table:: 
+
+     * - **Status**
+       - **Response**
+     * - 200
+       - {"status_code": int, "status": string}
+
+
+3. Delete Campaign
+
+   **Request**
+
+   .. list-table:: 
+
+     * - **Method**
+       - **URL**
+     * - DELETE 
+       - /api/campaign
+
+
+   **Body**
+
+   .. code-block:: 
+
+      ""data" : {
+                  "name" : string
+            }
+
+   **Response**
+
+   .. list-table:: 
+
+     * - **Status**
+       - **Response**
+     * - 200
+       - {"status_code": int, "status": string}
+
+
+4. Get all campaigns
+
+   **Request**
+
+   .. list-table:: 
+
+     * - **Method**
+       - **URL**
+     * - GET 
+       - /api/campaign-list
+
+   **Response**
+
+   .. list-table:: 
+
+     * - **Status**
+       - **Response**
+     * - 200
+       - {
+                  "status_code": "int",
+                  "data": [
+                      {
+                          "name": "string",
+                          "clusters": [
+                              {
+                                  "cluster_name": "string",
+                                  "capacity": "int",
+                                  "weightage": "int",
+                                  "gateways": [
+                                      {
+                                          "name": "string",
+                                          "did_range": "string"
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              }
+
+5. Get Campaign
+
+   **Request**
+
+   .. list-table:: 
+
+     * - **Method**
+       - **URL**
+     * - GET
+       - /api/campaign/{id}
+
+
+   **Path Parameters**
+
+   .. list-table:: 
+
+     * - **Params**
+       - **Values**
+     * - id
+       - string
+
+
+   **Response**
+   
+   .. list-table:: 
+
+     * - **Status**
+       - **Response**
+       - Data format
+     * - 200
+       - {
+            "status_code": int,
+            "data": {
+                "name": "string",
+                "clusters": [
+                    {
+                        "cluster_name": "string",
+                        "capacity": "int",
+                        "weightage": "int",
+                        "gateways": [
+                            {
+                                "name": "string",
+                                "did_range": "string"
+                            }
+                        ]
+                    }
+                ]
+            }
+         }
+
+
+
+.. autosummary:: 
 .. toctree::
+   :numbered:
 
    usage
    api
